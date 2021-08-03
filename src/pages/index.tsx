@@ -128,6 +128,7 @@ export const getStaticProps: GetStaticProps = async () => {
     [Prismic.predicates.at('document.type', 'posts')],
     {
       pageSize: 1,
+      lang: 'en-us',
     }
   );
   console.log(JSON.stringify(postsResponse, null, 2));
